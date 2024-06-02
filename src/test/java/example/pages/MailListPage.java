@@ -14,7 +14,7 @@ public class MailListPage extends BasePage {
         super(driver);
     }
 
-    @FindAll({@FindBy(css = "button#submit")})
+    @FindAll({@FindBy(css = "a.llc")})
     public List<WebElement> mailsList;
 
     public MailPage viewMailWithSubject(String subject) {
